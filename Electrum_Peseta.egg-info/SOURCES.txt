@@ -15,7 +15,6 @@ setup.py
 Electrum_Peseta.egg-info/PKG-INFO
 Electrum_Peseta.egg-info/SOURCES.txt
 Electrum_Peseta.egg-info/dependency_links.txt
-Electrum_Peseta.egg-info/requires.txt
 Electrum_Peseta.egg-info/top_level.txt
 data/README
 data/noface.svg
@@ -80,11 +79,13 @@ icons/hot_seed.png
 icons/key.png
 icons/lock.png
 icons/lock.svg
+icons/microphone.png
 icons/network.png
 icons/pesetabg.png
 icons/preferences.png
 icons/qrcode.png
 icons/seed.png
+icons/speaker.png
 icons/status_connected.png
 icons/status_disconnected.png
 icons/status_disconnected.svg
@@ -166,6 +167,7 @@ locale/vi_VN/LC_MESSAGES/electrum.mo
 locale/zh_CN/LC_MESSAGES/electrum.mo
 locale/zh_TW/LC_MESSAGES/electrum.mo
 plugins/__init__.py
+plugins/audio_modem.py
 plugins/btchipwallet.py
 plugins/cosigner_pool.py
 plugins/exchange_rate.py
