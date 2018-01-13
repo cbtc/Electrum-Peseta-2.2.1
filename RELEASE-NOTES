@@ -12,7 +12,7 @@
  * Update for amodem v 1.5
     - amodem does not depend on pyaudio (only on numpy)
     - use ctypes to access PortAudio API
- *
+ * Remove wrong test
 
 
 
