@@ -6,6 +6,7 @@
  * Fix createrawtransaction
  * Fix Cosign error posting a new tx and cosign not properly loading in other electrum until a restart
  * Multisig restore - preventable user error
+ * Drop support for multiple accounts (bip44) in standard wallets 
 
 # Release 2.2
 
