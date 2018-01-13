@@ -8,6 +8,15 @@
  * Multisig restore - preventable user error
  * Drop support for multiple accounts (bip44) in standard wallets 
  * Add audio modem integration for transaction sending & receiving
+ * Fix Daemon on Windows
+ * Update for amodem v 1.5
+    - amodem does not depend on pyaudio (only on numpy)
+    - use ctypes to access PortAudio API
+ *
+
+
+
+
 # Release 2.2
 
  * Fixed block header synchronization bug
