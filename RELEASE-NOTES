@@ -1,3 +1,9 @@
+# Release 2.3
+ * Fix can't create unsigned tx from old electrum
+ * Fix decoderawtransaction 
+ * Fix no module named i18n
+ * Do not add command to console history if it starts with a space
+
 # Release 2.2
 
  * Fixed block header synchronization bug
