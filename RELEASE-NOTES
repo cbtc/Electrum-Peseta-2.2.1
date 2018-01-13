@@ -16,6 +16,7 @@
  * Do not self-enable audio modem plugin 
  * Do not self-enable plot plugin 
  * Move root_name to parent class
+ * Add ismine command
 
 
 
