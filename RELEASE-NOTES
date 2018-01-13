@@ -3,6 +3,8 @@
  * Fix decoderawtransaction 
  * Fix no module named i18n
  * Do not add command to console history if it starts with a space
+ * Fix createrawtransaction
+ * Fix Cosign error posting a new tx and cosign not properly loading in other electrum until a restart
 
 # Release 2.2
 
