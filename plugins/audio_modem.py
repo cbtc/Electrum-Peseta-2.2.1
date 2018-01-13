@@ -9,11 +9,14 @@ from PyQt4.QtCore import *
 import traceback
 import zlib
 import json
-from io import BytesIO 
+from io import BytesIO
+import sys
 
 try:
     import amodem
     print_msg('Audio MODEM is enabled.')
+    amodem.log.addHandler(amodem.logging.StreamHandler(sys.stderr))
+    amodem.log.setLevel(amodem.logging.INFO)
 except ImportError:
     amodem = None
     print_msg('Audio MODEM is not found.')
