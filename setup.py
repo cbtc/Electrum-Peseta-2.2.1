@@ -79,6 +79,7 @@ setup(
         'qrcode',
         'SocksiPy-branch',
         'tlslite',
+        'pythondns'
         'btcutils',
         'ltc_scrypt'
     ],
