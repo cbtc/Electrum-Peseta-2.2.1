@@ -12,7 +12,7 @@ from electrum_peseta.pesetacoin import EncodeBase58Check, public_key_to_bc_addre
 from electrum_peseta.i18n import _
 from electrum_peseta.plugins import BasePlugin, hook
 from electrum_peseta.transaction import deserialize
-from electrum_peseta.wallet import NewWallet
+from electrum_peseta.wallet import BIP32_HD_Wallet 
 from electrum_peseta.util import print_error
 
 from electrum_peseta_gui.qt.password_dialog import make_password_dialog, run_password_dialog
@@ -161,11 +161,12 @@ class Plugin(BasePlugin):
             return False
 
 
-class TrezorWallet(NewWallet):
+class TrezorWallet(BIP32_HD_Wallet):
     wallet_type = 'trezor'
+    root_derivation = "m/44'/0'"
 
     def __init__(self, storage):
-        NewWallet.__init__(self, storage)
+        BIP32_HD_Wallet.__init__(self, storage)
         self.transport = None
         self.client = None
         self.mpk = None
