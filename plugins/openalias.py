@@ -1,6 +1,6 @@
-from electrum_gui.qt.util import EnterButton
-from electrum.plugins import BasePlugin, hook
-from electrum.i18n import _
+from electrum_peseta_gui.qt import EnterButton
+from electrum_peseta.plugins import BasePlugin, hook
+from electrum_peseta.i18n import _
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
