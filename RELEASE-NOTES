@@ -13,6 +13,7 @@
     - amodem does not depend on pyaudio (only on numpy)
     - use ctypes to access PortAudio API
  * Remove wrong test
+ * Do not self-enable audio modem plugin 
 
 
 
