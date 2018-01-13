@@ -1,3 +1,1 @@
-electrum_peseta
-electrum_peseta_gui
-electrum_peseta_plugins
+
