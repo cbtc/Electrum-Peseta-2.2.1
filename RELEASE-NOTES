@@ -17,6 +17,8 @@
  * Do not self-enable plot plugin 
  * Move root_name to parent class
  * Add ismine command
+ * Add OpenAlias
+ * Display and encode only hex with OP_RETURN 
 
 
 
