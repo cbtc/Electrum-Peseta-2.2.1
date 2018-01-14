@@ -38,10 +38,8 @@ class Plugin(BasePlugin):
         return 'Audio MODEM'
 
     def _audio_interface(self):
-        return amodem.audio.Interface(
-            config=self.modem_config,
-            name=self.library_name
-        )
+        interface = amodem.audio.Interface(config=self.modem_config)
+        return interface.load(self.library_name)
 
     def description(self):
         return ('Provides support for air-gapped transaction signing.\n\n'
