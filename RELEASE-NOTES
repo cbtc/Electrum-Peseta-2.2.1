@@ -22,6 +22,7 @@
  * Added arbitrary outputs 
  * Change type to 'script' and remove OP_RETURN 
  * Remove remaining instances of op_return type
+ * TrustedCoin support (2FA)
 
 
 
