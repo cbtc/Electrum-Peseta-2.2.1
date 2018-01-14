@@ -1,6 +1,6 @@
 from electrum_peseta.plugins import BasePlugin, hook
 from electrum_peseta_gui.qt.util import WaitingDialog, EnterButton
-from electrum_peseta.plugins import print_msg
+from electrum_peseta.util import print_msg, print_error
 from electrum_peseta.i18n import _
 
 from PyQt4.QtGui import *
@@ -18,12 +18,12 @@ try:
     import amodem.recv
     import amodem.send
     import amodem.config
-    print_msg('Audio MODEM is available.')
+    print_error('Audio MODEM is available.')
     amodem.log.addHandler(amodem.logging.StreamHandler(sys.stderr))
     amodem.log.setLevel(amodem.logging.INFO)
 except ImportError:
     amodem = None
-    print_msg('Audio MODEM is not found.')
+    print_error('Audio MODEM is not found.')
 
 class Plugin(BasePlugin):
     def __init__(self, config, name):
